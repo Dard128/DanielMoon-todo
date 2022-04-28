@@ -13,13 +13,14 @@ const LabelWrapper = styled.div`
 const Input = styled.input`
     width: 200px;
     height: 30px;
+    background-color: #D3D3D3;
 `;
 
 const Button = styled.div`
-    font-size: 35px;
+    font-size: 30px;
     border-radius: 3px;
     margin: 1px;
-    border: 1px solid
+    border: 1px solid;
 `;
 
 

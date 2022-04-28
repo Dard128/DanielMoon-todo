@@ -1,25 +1,33 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const Date = styled.div`
+const Day = styled.div`
     font-size: 60px;
 `;
 
 const Week = styled.div`
     font-size:25px;
-    color: dark-grey;
 `;
 
 function TodoDate(){
+    const Today = new Date();
+    console.log(Today.getDate);
+
     return(
+    <>
         <div>
-            <Date> 
-                2022/04/26
-            </Date>
+            {Today.getFullYear()}
+            /
+            {Today.getMonth()+1}
+            /
+            {Today.getDate()}
+            <Day> 
+            </Day>
             <Week>
                 Tuesday
             </Week>
         </div>
+    </>
     )
 }
 
